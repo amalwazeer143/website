@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>szabist zabtech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+     <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .navicon{
+                display:none;
+                margin-left: 50%;
+                color:blue;
+                font-size:25px ;
+
+            }
+            .content{
+                display: flex;
+                flex-direction:row ;
+                justify-content: space-around;
+                margin-top:10%;
+            }
+            .content div{
+                /* background-color: brown; */
+                width:20%;
+            }
+            .content div>div{
+    
+                width:200px;
+            }
+            h1{
+            margin-left:80px;
+            color:rgb(8, 78, 144);
+            }
+            .logo3{
+                margin-top:15%;
+                margin-left:45% ;
+            }
+            .logo3 h1{
+                margin-left:-5%;
+            }
+            .gallary{
+                display:flex;
+                flex-direction: row;
+
+            }
+            .gallary img {
+                width: 80%;}
+
+
+            .gallary2{
+            display:flex;
+        
+            
+        
+                
+            }
+            .gallary2 img{
+                width: 80%;
+            }
+        @media only screen and (max-width:700px){
+            .nav2 ul li{
+                display: none;
+            }
+            .navicon{
+                display:block;
+            
+            }
+        
+            .content {
+
+                display:flex;
+                flex-direction:column;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+            .content div>img{
+                text-align: center;
+                align-items: center;
+
+
+            }
+            .gallary{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .gallary img {
+                width: 40%;align-items: center;
+                }
+
+
+            .gallary2{
+                text-align: center;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+            }
+                .gallary2 img{
+                    width:40% ;
+                    
+
+                }
+            .headicon{
+                display:none ;
+            }
+            .sidebar{
+                margin-left:-50px;
+            }
+        
+    
+
+            
+        }
+        
+        header{
+            display: flex;
+
+        }
+        .nav1{
+            background-color:rgb(8, 78, 144); ;
+            height: 9vh;
+            width:100%;
+            color:white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .img{
+            margin-left:40%;
+
+        }
+    
+        .nav2 ul{
+            display: flex;
+            justify-content: space-around;
+           list-style-type:none;
+           align-items: center;
+
+    
+        }
+        .nav2 ul li a {
+            text-decoration: none;
+           color:rgb(8, 78, 144); 
+           font-size: large;
+           
+    
+        }
+        .nav2>ul>li:hover>a{
+        
+
+            border-bottom:solid 4px rgb(8, 78, 144) ;
+
+        }
+        .nav2 .manu li:hover {
+            border: none;
+
+}
+        .nav2 ul li .manu{
+            display: none;
+            position: absolute;
+        
+        
+
+        }
+        .nav2 ul li .manu li{
+            padding:20px;
+        }
+        .nav2 ul li:hover .manu {
+            
+            display:block;
+            background-color: aliceblue;
+            z-index: 10;
+
+        }
+        .nav2 ul li .manu2{
+            display:none;
+            position:absolute;
+        }
+        .nav2 ul li .manu2 li {
+            padding:20px;
+        }
+        .nav2 ul li:hover .manu2 {
+            display: block;
+            background-color: aliceblue;
+            z-index:10;
+        }
+        
+
+
+        .c1{
+            
+            padding:10px;
+        }
+        .outer{
+            width:100%;
+            overflow:hidden ;
+            margin-top:20px;
+            z-index: -9999;
+        }
+        .inner{
+            position: relative;
+            width: 300%;
+            animation-name: sd ;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            white-space: nowrap;
+            z-index: -9999;
+
+        }
+         .inner div{
+            display: flex;
+            width: 33.33%;
+            float: left;
+            text-align: center;
+        } 
+        .inner div img{
+            width: 100%;
+        } 
+        
+            
+        
+         @keyframes sd{
+            0%{
+                margin-left: -0;
+
+            }
+            50%{
+                margin-left: -100%;
+
+
+            }
+
+            100%{
+                margin-left:-200% ;
+            }
+        
+
+        } 
+    
+        .sidebar{
+        left:96%;
+        top:50%;
+        width:60px;
+        height:230px;
+        background-color:rgb(8, 78, 144) ;
+        z-index:999;
+        position: fixed;
+        display:flex;
+         flex-direction:column ;
+        }
+        .sidebar .icon{
+            color:aliceblue;
+            padding-top:25px;
+            padding-left:15px;
+            font-size:28px;
+        }
+
+        .sidebar  :hover .icon {
+            background-color:rgb(80, 131, 179)
+        }
+         .sidebar .icon{
+          width: 150px;
+         }
+
+          /* p{ 
+            margin-left: 100px;
+             position: relative; 
+             z-index:+999 ; 
+             left: 50;  
+        }
+            */
+            .box{
+                color:aliceblue;
+                margin-top: 100px;
+                width: 100%;
+                height:20vh;
+                background-color: rgb(8, 78, 144);
+                text-align: center;
+                font-size: large;
+                padding-top:80px;
+            }
+            .logo{
+                margin-left:45%;
+                margin-top:10%;
+        
+            }
+             h2{
+                margin-left:-80px;
+                color:rgb(8, 78, 144);
+            }
+            
+            
+            
+            
+            .footer{
+                padding-top:10%;
+                color:aliceblue;
+                margin-top: 100px;
+                width: 100%;
+                height:300px;
+                background-color:rgb(8, 78, 144);
+            }
+            .contect{
+             margin-left:40%;
+            }
+            .address{ margin-left: 20%;
+
+            }
+            .no{
+                margin-left:42%;
+            }
+            .email{
+                margin-left:41% ;
+            }
+            
+
+
+        
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="nav1">
+          <div> <span><i class="fa-solid fa-phone"></i></span> +92-21-35220217 </div>
+
+    <div> <span class="c1"><i class="fa fa-envelope icon"></i></span>info@zabtech.edu.pk</div>  
+
+    <div class="headicon"><span class="c1"><i class='fab fa-instagram icon'></i></span>
+        <span class="c1"><i class='fab fa-facebook-f icon'></i></span>
+       <span class="c1"><i class='fab fa-linkedin icon'></i></span>
+       <span class="c1"><i class="fa-brands fa-twitter"></i></span>
+       <span class="c1"><i class="fa-brands fa-youtube"></i></span></div>
+    </div>
+    </div>
+    <div class="img"><img src="zabimg.png"></div>
+    <div class="navicon"><i class="fa-solid fa-bars"></i></div>
+    
+    <div class="nav2">
+            <ul>
+                <li><a href=""> Home</li></a>
+                <li><a href=""> About us</a>
+                <ul class="manu">
+                    <li class="tct"><a href="">ZABtech</a></li>
+                    <li class="tct"><a href="">leadership</a></li>
+                    <li class="tct"><a href="">organogram</a></li>
+                    <li class="tct"><a href="">TOVET program</a></li>
+                    <li class="tct"><a href="">Recognition of prior learning</a></li>
+                </ul></li>
+                <li><a href=""> Admission</a> 
+                <ul class="manu2">
+                    <li><a href="">Addmission form</a></li>
+                    <li><a href="">online Addmission</a></li>
+                </ul></li>
+                <li><a href=""> Zabtech Chapter</a></li>
+                <li><a href=""> Zabtech course</a></li>
+                <li><a href=""> information</a></li>
+                <li><a href=""> Event</a></li>
+            </ul>
+
+            
+    </div>
+    <div class="outer">
+        <div class="inner">
+
+           <div><img src="zabtechimg.jpg"></div> 
+            <div><img src="zabtechimg2.jpg"></div>
+           <div> <img src="zabtechimg3.jpg"></div> 
+        </div>
+    </div>
+    
+    <div class="sidebar">
+        
+        <span ><a href="https://www.instagram.com/zabtech_itve/"><i class='fab fa-instagram icon'></i></span></a>
+        <span > <a href="https://www.facebook.com/szabistzabtech"><i class='fab fa-facebook-f icon'></i></span></a>
+       <span ><a href="https://www.linkedin.com/in/szabist-zabtech-b231a8249/"><i class='fab fa-linkedin icon'></i></span></a>
+       <span><a href="https://twitter.com/"><i class="fa-brands fa-twitter icon" ></i></span></a>
+    </div>
+    <div class="box">Producing Skilled Workforce Since 2000</div>
+    <div class="logo">
+        <div><img src="logo2.png"></img></div>
+    <h2 >OUR JOURNEY SO FAR</h2>
+</div>
+<div class="content">
+    <div><img src="simg.png">
+        <h1>100%</h1>
+    <div>COURSES TO FAST TRACK YOUR CAREER</div>
+    </div>
+    <div><img src="simg2.png" >
+    <h1>22</h1>
+    <div>YEARS OF EXPERIENCE</div>
+    </div>
+    <div><img src="simg3.png" >
+        <h1>60000+</h1>
+    <div>TRAINED STUDENTS SINCE ESTABLISHMENT</div>
+    </div>
+    <div><img src="simg4.png" >
+    <h1>80%</h1>
+    <div>GRADUATES GO ON TO WORK</div>
+    </div>
+    <div><img src="simg5.png" >
+    <h1>500</h1>
+    <div>INDUSTRY PARTNERSHIP</div>
+</div>
+
+</div>
+<div class="logo3">
+    <img src="icon-header-gallery.png">
+    <h1> GET INSPIRED</h1>
+</div>
+<div class="gallary">
+    <div><img src="zimg.jpg"></div>
+    <div><img src="zimg2.jpg" ></div>
+    <div><img src="zimg3.jpg"></div>
+    </div>
+    <div class="gallary2">
+    <div><img src="zimg4.jpg" ></div>
+    <div><img src="zimg5.jpeg"></div>
+    <div><img src="zimg6.jpg"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="contect">CONTACT INFORMATION</div>
+        <div class="address">SZABIST ZABTech Directorate, Sheikh Sultan Trust Building No.1 Beaumont Road, Karachi, Sindh, Pakistan</div>
+     
+       <div class="no"> +92-21-35220217</div>
+     
+        <div class="email">info@zabtech.edu.pk</div>
+</div>
+    
+
+
+
+    
+</body>
+</html> 
